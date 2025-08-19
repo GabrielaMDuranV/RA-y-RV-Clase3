@@ -16,7 +16,12 @@
 
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' renderer="antialias: true; alpha: true; ar: true;">
     <a-marker preset="hiro" id="marker">
-      <a-box id="arBox" position="0 0.5 0" rotation="0 45 0" scale="0.6 0.6 0.6" material="color: #FF3333;"></a-box>
+      <a-entity id="animalModel"
+      gltf-model="url(img/Robot.glb)"
+      sacale ="0.5 0.5 0.5"
+      position ="0 0 0"
+      rotation ="0 180 0">
+      </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
